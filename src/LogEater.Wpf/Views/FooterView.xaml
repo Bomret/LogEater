@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="LogEater.Wpf.Views.FooterView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:LogEater.Wpf.Views"
+             mc:Ignorable="d"
+             d:DesignHeight="100" d:DesignWidth="600">
+    <Grid Background="{StaticResource HeaderFooterBackgroundColor}">
+        <Border BorderBrush="{StaticResource BorderColor}"
+                BorderThickness="0 1 0 0" />
+        
+        <Grid HorizontalAlignment="Left"
+              Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="File size:"
+                       Style="{StaticResource Normal}"
+                       Padding="0 0 2 0"/>
+            <TextBlock x:Name="FileSize"
+                       Grid.Column="1"
+                       Padding="2 0 0 0"
+                       Style="{StaticResource Normal}"/>
+            
+        </Grid>
+    </Grid>
+</UserControl>

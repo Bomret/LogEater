@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Hyperlink"
+           x:Key="Link">
+        <Setter Property="Foreground"
+                Value="CornflowerBlue" />
+        <Setter Property="TextDecorations"
+                Value="None" />
+    </Style>
+
+    <Style TargetType="TextBlock"
+           x:Key="Large">
+        <Setter Property="FontSize"
+                Value="20" />
+        <Setter Property="Foreground"
+                Value="{StaticResource TextColor}" />
+    </Style>
+
+    <Style TargetType="TextBlock"
+           x:Key="Big">
+        <Setter Property="FontSize"
+                Value="14" />
+        <Setter Property="Foreground"
+                Value="{StaticResource TextColor}" />
+    </Style>
+
+    <Style TargetType="TextBlock"
+           x:Key="Normal">
+        <Setter Property="FontSize"
+                Value="12" />
+        <Setter Property="Foreground"
+                Value="{StaticResource TextColor}" />
+    </Style>
+
+    <Style TargetType="TextBlock"
+           x:Key="SmallPrint">
+        <Setter Property="FontSize"
+                Value="10" />
+        <Setter Property="Foreground"
+                Value="{StaticResource TextColor}" />
+    </Style>
+</ResourceDictionary>
